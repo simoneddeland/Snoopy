@@ -60,7 +60,7 @@ body {
   color: #666;
 }
 .navbar {
-  display block;
+  display: block;
   background-color: #610000;
   font-family: Verdana;
   padding: 0.5em;
