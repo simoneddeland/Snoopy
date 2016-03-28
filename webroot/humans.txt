@@ -1,0 +1,2 @@
+Snoopy is a PHP-boilerplate/framework for small websites. It is built by
+Simon Eddeland as a part of a web programming course.

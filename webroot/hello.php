@@ -1,0 +1,19 @@
+<?php
+/**
+ * This is a Snoopy pagecontroller.
+ *
+ */
+// Include the essential config-file which also creates the $snoopy variable with its defaults.
+include(__DIR__.'/config.php');
+
+
+// Do it and store it all in variables in the Snoopy container.
+$snoopy['title'] = "Snoopy-exempel";
+
+$snoopy['main'] = <<<EOD
+<h1>Snoopy-exempel</h1>
+<p>Detta är en exempelsida gjord med Snoopy.</p>
+EOD;
+
+// Finally, leave it all to the rendering phase of Anax.
+include(SNOOPY_THEME_PATH);
