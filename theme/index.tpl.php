@@ -12,6 +12,7 @@
 <body>
   <div id='wrapper'>
     <div id='header'><?=$header?></div>
+    <?php echo CNavigation::GenerateMenu($snoopy['menuItems']) ?>
     <div id='main'><?=$main?></div>
     <div id='footer'><?=$footer?></div>
   </div>

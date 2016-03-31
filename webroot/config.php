@@ -56,6 +56,14 @@ $snoopy['header'] = <<<EOD
 <span class='siteslogan'>En webbtemplate som heter Snoopy</span>
 EOD;
 
+$snoopy['menuItems'] = array(
+    'class' => 'navbar',
+    'items' => array(
+        'hello' => array('text' => 'Hello world', 'url' => 'hello.php'),
+        'helloAnother' => array('text' => 'Hello igen', 'url' => 'helloAnother.php')
+    )
+);
+
 $snoopy['footer'] = <<<EOD
 <footer><span class='sitefooter'>Copyright &copy; Simon Eddeland | <a href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn</a></span></footer>
 EOD;
