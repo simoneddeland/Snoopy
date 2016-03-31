@@ -15,5 +15,5 @@ $snoopy['main'] = <<<EOD
 <p>Detta är en exempelsida gjord med Snoopy.</p>
 EOD;
 
-// Finally, leave it all to the rendering phase of Anax.
+// Finally, leave it all to the rendering phase of Snoopy.
 include(SNOOPY_THEME_PATH);
