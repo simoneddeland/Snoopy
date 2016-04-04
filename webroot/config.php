@@ -60,6 +60,13 @@ $snoopy['menuItems'] = array(
     'class' => 'navbar',
     'items' => array(
         'hello' => array('text' => 'Hello world', 'url' => 'hello.php'),
+        'submenuexample' => array(
+            'submenuname' => 'A submenu',
+            'submenuitems' => array(
+                'hello' => array('text' => 'Hello world', 'url' => 'hello.php'),
+                'helloAnother' => array('text' => 'Hello igen', 'url' => 'helloAnother.php')
+            )
+        ),
         'helloAnother' => array('text' => 'Hello igen', 'url' => 'helloAnother.php')
     )
 );
