@@ -80,3 +80,36 @@ body {
   padding: 0.3em 0.2em 0.5em 0.2em;
   color: #333;
 }
+.submenu {
+  display: inline;
+  background-color: #a40000;
+  color: #fff;
+  padding: 0.2em;
+  text-decoration: none;
+  position: relative;
+}
+.submenu.selected {
+  background-color: #fff;
+  color: #333;
+}
+.submenulist {
+  padding: 0.5em 0 0 0;
+  position:absolute;
+  left:-9999px;
+  z-index: 2;
+}
+.submenulist a {
+  display: block;
+}
+.submenulist a.selected{
+  padding: 0.2em;
+  border-style: none solid none solid;
+  border-color: #a40000;
+  border-width: 1px;
+}
+.submenulist a:hover {
+  padding: 0.2em;
+}
+.submenu:hover .submenulist {
+  left:0;
+}
