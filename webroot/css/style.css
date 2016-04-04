@@ -103,7 +103,7 @@ body {
 }
 .submenulist a.selected{
   padding: 0.2em;
-  border-style: none solid none solid;
+  border-style: solid;
   border-color: #a40000;
   border-width: 1px;
 }
