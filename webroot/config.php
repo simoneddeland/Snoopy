@@ -21,6 +21,7 @@ define('SNOOPY_INSTALL_PATH', __DIR__ . '/..');
 define('SNOOPY_THEME_PATH', SNOOPY_INSTALL_PATH . '/theme/render.php');
 
 
+
 /**
  * Include bootstrapping functions.
  *
@@ -41,6 +42,19 @@ session_start();
  *
  */
 $snoopy = array();
+
+/**
+ * Settings for the database.
+ *
+ */
+define('DB_USER', 'USERNAME'); // The database username
+define('DB_PASSWORD', 'PASSWORD'); // The database password
+
+
+$snoopy['database']['dsn']            = 'mysql:host=localhost;dbname=DBNAME';
+$snoopy['database']['username']       = DB_USER;
+$snoopy['database']['password']       = DB_PASSWORD;
+$snoopy['database']['driver_options'] = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'");
 
 
 /**
