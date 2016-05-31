@@ -21,13 +21,13 @@ class CNavigation {
 
           // Generate the HTML of the enclosing div for the submenu
           $parentHtml = "<div class='{$submenuClass}'>{$item['submenuname']}<div class='submenulist'>";
-          $submenuCloseHtml = "</li></div></div>\n";
+          $submenuCloseHtml = "</div></div>";
 
           // Put it all together
           $html .= $parentHtml . $submenuHtml . $submenuCloseHtml;
       } else {
           $selected = basename($_SERVER['SCRIPT_FILENAME']) == $item['url'] ? 'selected' : null;
-          $html .= "<a href='{$item['url']}' class='{$selected}'>{$item['text']}</a>\n";
+          $html .= "<a href='{$item['url']}' class='{$selected}'>{$item['text']}</a>";
       }
     }
     $html .= "</nav>\n";

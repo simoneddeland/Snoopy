@@ -1,30 +1,56 @@
+/* Raleway - A font for navbars */
+@import url(https://fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
+
 /**
  * General elements
  */
-
 body {
-  color: #333;
-  font-family: arial, sans-serif;
+  background-color: #ddd;
+  font-family: 'Open Sans', sans-serif;
   overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #a40000;
+}
+a:hover {
+  color: #e00808;
 }
 
 /**
  * Layout of the main page elements
  */
-
-#wrapper {
+#main, #header, #footer {
   margin: 0 auto;
   width: 980px;
   padding: 10px;
 }
-
-/**
- * Layout for header
- */
-
 #header {
   position: relative;
-  margin-bottom: 40px;
+}
+#header-wrapper {
+  background-color: #555;
+  color: #fff;
+}
+#navbar-wrapper {
+  background-color: #610000;
+}
+#main {
+  min-height: 20em;
+}
+#main-wrapper {
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+#footer-wrapper {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+#footer {
+  color: #444;
 }
 .sitetitle {
   position: absolute;
@@ -37,64 +63,44 @@ body {
   top: 65px;
   left: 300px;
   font-style: italic;
-  color: #666;
 }
 
-/**
- * Layout for main
- */
-
-#main {
-  min-height: 20em;
-}
-
-/**
- * Layout for footer
- */
-
-#footer {
-  margin-top: 40px;
-  border-top: 1px solid #ccc;
-  padding-top: 15px;
-}
-.sitefooter {
-  color: #666;
-}
 .navbar {
+  margin: 0 auto;
+  width: 980px;
+  padding: 0;
+
   display: block;
   background-color: #610000;
-  font-family: Verdana;
-  padding: 0.5em;
+  font-family: Raleway, Verdana;
+  font-size: 18px;
 }
 .navbar a {
+  display: inline-block;
   background-color: #a40000;
   color: #fff;
-  padding: 0.2em;
   text-decoration: none;
+  padding: 10px;
+  margin: 0;
 }
 .navbar a:hover {
   background-color: #bb0303;
-  padding: 0.5em 0.2em 0.5em 0.2em
 }
 .navbar a.selected {
-  background-color: #fff;
-  padding: 0.3em 0.2em 0.5em 0.2em;
-  color: #333;
+  background-color: #444;
 }
 .submenu {
   display: inline;
   background-color: #a40000;
   color: #fff;
-  padding: 0.2em;
   text-decoration: none;
   position: relative;
+  padding: 10px;
 }
 .submenu.selected {
-  background-color: #fff;
-  color: #333;
+  background-color: #444;
 }
 .submenulist {
-  padding: 0.5em 0 0 0;
   position:absolute;
   left:-9999px;
   z-index: 2;
@@ -103,14 +109,42 @@ body {
   display: block;
 }
 .submenulist a.selected{
-  padding: 0.2em;
   border-style: solid;
   border-color: #a40000;
   border-width: 1px;
 }
-.submenulist a:hover {
-  padding: 0.2em;
+.submenu:hover {
+  background-color: #bb0303;
 }
 .submenu:hover .submenulist {
   left:0;
+}
+.headerform {
+  float: right;
+}
+a.category {
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom: 3px;
+}
+a.category:hover {
+  background-color: #777;
+}
+textarea {
+  width: 500px;
+  height: 120px;
+}
+.floatright {
+  float: right;
+}
+.clearfix {
+  overflow: auto;
+}
+figcaption {
+  text-align: center;
+  font-size: 10pt;
 }

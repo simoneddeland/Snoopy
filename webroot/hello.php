@@ -13,6 +13,8 @@ $snoopy['title'] = "Snoopy-exempel";
 $snoopy['main'] = <<<EOD
 <h1>Snoopy-exempel</h1>
 <p>Detta är en exempelsida gjord med Snoopy.</p>
+<img src='img.php?src=snoopy.png&width=500' alt='snoopy stor'>
+<p>Bilden ovan är ändrad med img.php</p>
 EOD;
 
 // Finally, leave it all to the rendering phase of Snoopy.

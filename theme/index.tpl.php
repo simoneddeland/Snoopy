@@ -10,11 +10,17 @@
 <link rel='shortcut icon' href='favicon.ico'/>
 </head>
 <body>
-  <div id='wrapper'>
-    <div id='header'><?=$header?></div>
-    <?php echo CNavigation::GenerateMenu($snoopy['menuItems']) ?>
-    <div id='main'><?=$main?></div>
-    <div id='footer'><?=$footer?></div>
-  </div>
+    <div id='header-wrapper'>
+        <div id='header'><?=$header?></div>
+    </div>
+    <div id='navbar-wrapper'>
+        <?php echo CNavigation::GenerateMenu($snoopy['menuItems']) ?>
+    </div>
+    <div id='main-wrapper'>
+        <div id='main'><?=$main?></div>
+    </div>
+    <div id='footer-wrapper'>
+        <div id='footer'><?=$footer?></div>
+    </div>
 </body>
 </html>
