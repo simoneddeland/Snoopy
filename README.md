@@ -5,6 +5,11 @@ A boilerplate for smaller websites or webbapplications using PHP.
 
 Built by Simon Eddeland
 
+Usage
+-------
+
+
+
 License
 ------------------
 
