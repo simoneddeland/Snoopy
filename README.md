@@ -17,9 +17,17 @@ Included in Snoopy are 5 classes: CDatabase, CImage, CNavigation, CTextFilter an
 
 **CDatabase** contains methods for connecting to a database using PDO. Some sample information for connecting to the database is included in the config file.
 
+**CImage** is used for image processing. The preferred way of using image processing is through the img.php script (which uses CImage), not by creating your own instance of CImage.
+
+**CNavigation** is used to create the navbar of the website, and you will probably not need to create an instance of this class.
+
+**CTextFilter** can apply filters such as markdown to a string.
+
+**CUser** provides an interface for checking if a user can/is logged in. Information is saved in the session variable.
+
 Image processing
 ----------------
-
+You can use img.php to present images on a web page. The images can be presented as they are, with changed width/height and can be sharpened through a filter. For a full list of the available parameters while using img.php, open the image.php file to see which get-parameters are used. To see an example of img.php in use, check the source code for hello.php.
 
 License
 ------------------
